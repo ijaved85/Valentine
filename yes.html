@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Knew you would say yes!</title>
+		<link rel="stylesheet" href="./yes_style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="bg_heart">
+			<div class="container">
+				<h1 class="header_text">I Knew you would say yes!
+				<b>My Valentine</b></h1>
+				<!-- <h3 class="header_tex">I LOVE U 😘</h2>-->
+				<div class="gif_container">
+					<img
+						src="./yes.webp"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var love = setInterval(function () {
+				var r_num = Math.floor(Math.random() * 40) + 1;
+				var r_size = Math.floor(Math.random() * 65) + 10;
+				var r_left = Math.floor(Math.random() * 100) + 1;
+				var r_bg = Math.floor(Math.random() * 25) + 100;
+				var r_time = Math.floor(Math.random() * 5) + 5;
+
+				$(".bg_heart").append(
+					"<div class='heart' style='width:" +
+						r_size +
+						"px;height:" +
+						r_size +
+						"px;left:" +
+						r_left +
+						"%;background:rgba(255," +
+						(r_bg - 25) +
+						"," +
+						r_bg +
+						",1);-webkit-animation:love " +
+						r_time +
+						"s ease;-moz-animation:love " +
+						r_time +
+						"s ease;-ms-animation:love " +
+						r_time +
+						"s ease;animation:love " +
+						r_time +
+						"s ease'></div>"
+				);
+
+				$(".bg_heart").append(
+					"<div class='heart' style='width:" +
+						(r_size - 50) +
+						"px;height:" +
+						(r_size - 50) +
+						"px;left:" +
+						(r_left + r_num) +
+						"%;background:rgba(255," +
+						(r_bg - 25) +
+						"," +
+						(r_bg + 25) +
+						",1);-webkit-animation:love " +
+						(r_time + 5) +
+						"s ease;-moz-animation:love " +
+						(r_time + 5) +
+						"s ease;-ms-animation:love " +
+						(r_time + 5) +
+						"s ease;animation:love " +
+						(r_time + 5) +
+						"s ease'></div>"
+				);
+
+				$(".heart").each(function () {
+					var top = $(this)
+						.css("top")
+						.replace(/[^-\d\.]/g, "");
+					var width = $(this)
+						.css("width")
+						.replace(/[^-\d\.]/g, "");
+					if (top <= -50 || width >= 40) {
+						$(this).detach();
+					}
+				});
+			}, 500);
+		</script>
+	</body>
+</html>

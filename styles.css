@@ -1,0 +1,66 @@
+	@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+			@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Ribeye+Marrow&display=swap');
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Love Ya Like A Sister", serif;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				background-color: #f9e3e3;
+				background-color: #FDFFFC;
+				font-family: "Arial", sans-serif;
+				font-family: "Love Ya Like A Sister", serif;
+				flex-direction: column;
+			}
+
+			.container {
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 3.3em;
+				color: #000;
+				text-shadow: 2px 2px 2px #fff;
+				font-family: "Ribeye Marrow", serif;
+			}
+
+			.buttons {
+				margin-top: 20px;
+			}
+
+			.yes-button {
+				font-size: 1.5em;
+				padding: 10px 20px;
+				margin-right: 10px;
+				background-color: #4caf50;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				text-shadow: 2px 2px 2px #000;
+			}
+
+			.no-button {
+				font-size: 1.5em;
+				padding: 10px 20px;
+				background-color: #f44336;
+				color: white;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				text-shadow: 2px 2px 2px #000;
+			}
+
+			.gif_container img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin-top: 20px;
+				filter: drop-shadow(3.3px 3px 0.17rem #000);
+			}

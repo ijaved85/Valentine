@@ -1,0 +1,123 @@
+	@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+	@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Ribeye+Marrow&display=swap');
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Love Ya Like A Sister", serif;
+				font-family: "Ribeye Marrow", serif;
+				overflow: none;
+			}
+			
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    background-color: #FDFFFC;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #000;
+    	text-shadow: 3px 3px 2px #fff;
+   /* z-index: 100;*/
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 490px; 
+    height: auto; 
+    filter: drop-shadow(3.3px 0.8px 0.17rem #000);
+    /*z-index: -980;*/
+}
+
+
+
+
+
+
+
+
+.bg_heart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  top: -50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -m-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* Add drop shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
+.heart:before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+
+.heart:after {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes love {
+  0% {
+    top: 110%;
+  }
+}
+@-moz-keyframes love {
+  0% {
+    top: 110%;
+  }
+}
+@-ms-keyframes love {
+  0% {
+    top: 110%;
+  }
+}
+@keyframes love {
+  0% {
+    top: 110%;
+  }
+}
+.bg_heart {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    text-align: center; /* Centers text inside the container */
+}
